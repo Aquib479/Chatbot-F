@@ -1,5 +1,3 @@
-import React from 'react'
-
 type Props = {
     name: string,
     type: 'submit' | 'reset' | 'button' | undefined;

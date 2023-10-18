@@ -1,4 +1,3 @@
-import React from 'react';
 import Logo from './shared/Logo';
 import { context } from '../context/AuthContext';
 import NavList from './shared/NavList';
