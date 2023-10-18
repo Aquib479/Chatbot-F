@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #040d17;
+  color: white;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.image-logo {
+  filter: invert(100%);
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.content {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.navlink {
+  scroll-behavior: smooth;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  /* border: 1px solid white; */
+  /* border-radius: 5px; */
+  /* box-shadow: 0 0 10px white; */
+}
+
+.navlink:hover {
+  color: rgb(64, 151, 250);
+}
+
+.shadow {
+  box-shadow: 0 0 20px white;
+  border-radius: 20px;
+}
+
+.shdw {
+  box-shadow: rgba(2, 51, 86, 0.634) 0px 3px 24px, rgba(91, 158, 202, 0.808) 0px 6px 56px, rgba(12, 50, 79, 0.925) 0px 4px 80px;
+}
