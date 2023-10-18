@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { context } from '../../context/AuthContext';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -39,7 +39,7 @@ type Props = {
 }
 
 const ChatList = (props: Props) => {
-    const [language, setLanguge] = useState("javascript");
+    // const [language, setLanguge] = useState("javascript");
     const messageSnippet = extractCodeSnippetFromString(props.content);
     const authentication = context();
 
@@ -74,7 +74,7 @@ const ChatList = (props: Props) => {
                             isCodeSnippet(item)
                                 ?
                                 <div className='w-[50vw] h-[50vh] my-4'>
-                                    <SyntaxHighlighter style={vscDarkPlus} language={language}>
+                                    <SyntaxHighlighter style={vscDarkPlus} language="javascript">
                                         {item}
                                     </SyntaxHighlighter>
                                 </div>
