@@ -44,17 +44,17 @@ const ChatList = (props: Props) => {
     const authentication = context();
 
     // function to get the language for the code snippet
-    function CodeLanguageSnippet(message: string) {
-        setLanguge(message.split("\n")[0]);
-    }
+    // function CodeLanguageSnippet(message: string) {
+    //     setLanguge(message.split("\n")[0]);
+    // }
 
-    useEffect(() => {
-        const value = messageSnippet?.map(item => {
-            return item[1];
-        });
-        // console.log(value);
+    // useEffect(() => {
+    //     const value = messageSnippet?.map(item => {
+    //         return item[1];
+    //     });
+    //     // console.log(value);
 
-    }, [messageSnippet])
+    // }, [messageSnippet])
 
     return props.role === 'user' ? (
         <>

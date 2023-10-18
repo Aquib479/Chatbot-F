@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import InputBox from '../components/shared/InputBox'
 import Button from '../components/shared/Button'
 import { context } from '../context/AuthContext'

@@ -1,4 +1,3 @@
-import React from 'react'
 import Animation from '../components/shared/Animation'
 
 const Home = () => {
